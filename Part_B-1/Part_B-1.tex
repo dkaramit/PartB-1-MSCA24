@@ -1,0 +1,182 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+
+
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{soul}
+
+
+\usepackage{newtxtext,newtxmath}
+
+\usepackage{helvet}
+
+\usepackage[a4paper]{geometry}
+%%--Minimum requirements--%%
+\geometry{
+	left=15mm,
+	right=15mm,
+	top=15mm,
+	bottom=15mm,
+	includehead=false,
+	includefoot=false
+}
+
+%%--Matches the .rtf template--%%
+%\geometry{
+%	left=1.0in,
+%	right=1.0in,
+%	top=0.955in,
+%	bottom=1.13in
+%}
+
+
+\newcommand{\fontSec}{\fontsize{14}{1} \selectfont}
+
+\newcommand{\fontSubSec}{\fontsize{12}{1} \selectfont}
+
+\newcommand{\fontL}{\fontsize{20}{1} \selectfont}
+
+\renewenvironment{tag}[1]{{\fontsize{9}{1}\selectfont\color{gray!60}\##1\#}}
+
+
+\usepackage{pgfgantt}
+\usetikzlibrary{shapes}
+
+\usepackage{subcaption}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\fontSec\bfseries}{\thesection .}{0.0em}{ }
+\titleformat{\subsection}{\normalfont\fontSubSec\bfseries\itshape}{\thesubsection}{1.3em}{}
+\titleformat{\subsubsection}
+{\small\sl\bfseries}{\thesubsubsection}{1em}{\centering}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{}
+\author{}
+\date{\empty}
+
+\setlength{\fboxrule}{0.9pt}
+\newcommand*{\mybox}[1]{\fcolorbox{black}{black!15}{\parbox{0.995\linewidth}{#1}}}
+
+
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage{lastpage}
+\lfoot{\centering\mybox{\fontL\phantom{0}}}
+\renewcommand{\headrulewidth}{0.pt}
+
+%%--Minimum requirements--%%
+\cfoot{\fontsize{10}{1} \selectfont Part B - Page \thepage \hspace{0pt} of \pageref{LastPage}}
+\lhead{\fontsize{8}{1} \selectfont Call: HORIZON-MSCA-2024-PF-01: MSCA Postdoctoral Fellowships 2024\\ 
+	\hfill \color{black!60} EU Grants: Application form (HE MSCA PF): V3.1 – 28.03.2024}
+
+%%--Matches the .rtf template--%%
+%\lhead{\fontfamily{phv}\selectfont  \fontsize{7}{1} Call: HORIZON-MSCA-2024-PF-01: MSCA Postdoctoral Fellowships 2024\\ 
+%	\hfill \color{gray!60} EU Grants: Application form (HE MSCA PF): V3.1 – 28.03.2024}
+%\lhead{\fontfamily{phv}\selectfont  \fontsize{7}{1} \selectfont Call: HORIZON-MSCA-2024-PF-01: MSCA Postdoctoral Fellowships 2024}
+%\cfoot{\fontfamily{phv}\selectfont  \fontsize{8}{1} \selectfont Part B - Page \thepage \hspace{0pt} of \pageref{LastPage}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-macros-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{./macros}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-refs-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{./footcite}
+\AtEveryCitekey{\clearfield{title}\ifentrytype{article}{\iffieldundef{journaltitle}{}{\clearfield{eprint}}}{}}
+
+\bibliography{./refs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-Begin-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+
+	\tag{@APP-FORM-HEMSCAPF@}
+	\begin{center}
+		\bfseries{\underline{\fontSec Part B-1}}
+	\end{center}
+	
+	\section{Excellence \tag{@REL-EVA-RE@}}\label{sec:Excellence}
+
+	\subsection{Quality and pertinence of the project’s research and innovation objectives (and the
+		extent to which they are ambitious, and go beyond the state of the art)}
+	
+	INSERT TEXT\sfcite{Karamitros:2021nxi}
+	
+	
+	\subsection{Soundness of the proposed methodology (including interdisciplinary approaches,
+		consideration of the gender dimension and other diversity aspects if relevant for the
+		research project, and the quality of open science practices).}
+	
+	INSERT TEXT
+	
+	\subsection{Quality of the supervision, training and of the two-way transfer of knowledge
+		between the researcher and the host}
+	
+	INSERT TEXT
+	
+	\subsection{Quality and appropriateness of the researcher’s professional experience,
+		competences and skills}
+	
+	INSERT TEXT
+	
+	\section{Impact \tag{@IMP-ACT-IA@}}\label{sec:Impact}
+	
+	\subsection{Credibility of the measures to enhance the career perspectives and employability of
+		the researcher and contribution to his/her skills development}
+	
+	INSERT TEXT
+	
+	\subsection{Suitability and quality of the measures to maximise expected outcomes and impacts,
+		as set out in the dissemination and exploitation plan, including communication activities \\ \tag{@COM-DIS-VIS-CDV@}}
+	
+	INSERT TEXT  
+	
+	
+	\subsection{The magnitude and importance of the project’s contribution to the expected scientific,
+		societal and economic impacts}
+	
+	INSERT TEXT
+
+	
+	\tag{§COM-DIS-VIS-CDV§} \tag{§IMP-ACT-IA§}
+	
+	
+	\section{Quality and Efficiency of the Implementation  
+		\tag{@QUA-LIT-QL@} 
+		\tag{@WRK-PLA-WP@}
+		\tag{@CON-SOR-CS@}
+		\tag{@PRJ-MGT-PM@}
+	}\label{sec:Quality}
+	
+	\subsection{Quality and effectiveness of the work plan, assessment of risks and appropriateness of the effort assigned to work packages}
+
+	INSERT TEXT
+
+	\subsection{Quality and capacity of the host institutions and participating organisations, including hosting arrangements}
+
+	INSERT TEXT 
+	
+
+	\tag{§CON-SOR-CS§}
+	\tag{§PRJ-MGT-PM§}
+	\tag{§QUA-LIT-QL§}
+	\tag{§WRK-PLA-WP§}
+
+\end{document}
+
+
+
+
+
